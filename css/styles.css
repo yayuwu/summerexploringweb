@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ! Estilos de inicialización (resets) */
+
+:root { 
+    --colorLogo: #707070; 
+    --colorTitulos: #FFB968;
+    --colorPromo1: #807871;
+    --colorPromo2: #E3B684;
+    --tamanioLetra: 32px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: .5px solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+/* ! Estilos globales */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+/* ! HEADER */
+
+header img {
+    width: 70px;
+    padding: 1em 0;
+}
+
+nav,
+nav div,
+ul {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    justify-content: space-around;
+}
+
+ul a {
+    padding: 0 1em;
+    color: var(--colorLogo);
+    font-weight: 600;
+}
+
+strong {
+    color: var(--colorLogo);
+    padding-left: 1em;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ! INICIO */
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/imgs/hero.jpg);
+    background-size: cover;
+    min-height: 600px;
+    padding: 0 6em;
+    margin: 0 3em;
+}
+
+h1 {
+    width: 300px;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+#inicio p {
+    width: 500px;
+}
+
+h1,
+h2 {
+    color: var(--colorTitulos);
+}
+
+/* ! MAIN */
+
+/* * PROMOS */
+
+#promos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em 8em;
+}
+
+#promos > div {
+    margin-top: 5em;
+}
+
+#promos > p {
+    width: 600px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+h2 {
+    font-size: var(--tamanioLetra);
+    font-weight: 600;
+}
+
+#promo1,
+#promo2 {
+    display: flex;
+    color: white;
+}
+
+#promo1 > div,
+#promo2 > div {
+    padding: 4em;
+    width: 50%;
+}
+
+#promo1 img,
+#promo2 img {
+    width: 50%;
+}
+
+#promo1 {
+    background-color: var(--colorPromo1);
+}
+
+#promo2 {
+    background-color: var(--colorPromo2);
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+/* * HISTORIA */
+
+#historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 8em;
+}
+
+#historia > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5em;
+    width: 100%;
+}
+
+.caja {
+    background-color: var(--colorPromo1);
+    color: white;
+    width: 339px;
+}
+
+.caja > div {
+    padding: 3em;
+}
+
+h4 {
+    margin-bottom: 1em;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* * CONTACTO */
+
+#contacto {
+    background-image: url(/imgs/hero3.jpg);
+    background-size: cover;
+    padding: 4em 4em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 5em 12em;
+    padding: 2em 2.5em;
+    background-color: white;
+    border-radius: 15px;
+}
+
+label,
+input,
+textarea,
+button {
+    margin-top: 1em;
+}
+
+input,
+textarea {
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: "Raleway", sans-serif;
+}
+
+textarea {
+    padding-top: 10px;
+    min-height: 70px;
+}
+
+button {
+    background-color: var(--colorTitulos);
+    border: 1px solid var(--colorTitulos);
+    font-size: 15px;
+    width: 300px;
+    padding: 1em 2em;
+    border-radius: 10px;
+    margin-top: 2em;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+}
+
+/* ! FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--colorPromo1);
+    color: white;
+}
+
+footer img {
+    width: 30px;
+}
+
+#footer-links a {
+    color: white;
+    line-height: 1.5em;
+}
+
+#footer-links {
+    display: flex;
+}
+
+#footer-links div {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+#footer-links div a:first-child {
+    font-weight: 600;
+}
+
+#footer-icons {
+    padding: 2em;
+}
+
+#footer-icons img {
+    margin-right: 1em;
+}
